@@ -1,0 +1,13 @@
+name: "Ember"
+description: "Warm dark theme for dwl"
+wm: "dwl"
+
+files:
+  # We'll use a dummy alacritty config for this test
+  - source: "alacritty.toml"
+    target: "~/.config/alacritty/alacritty.toml"
+    action: "symlink"
+
+commands:
+  - "echo 'Successfully ran inline commands!'"
+  - "echo 'Theme applied to dwl'"

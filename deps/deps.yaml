@@ -1,0 +1,6 @@
+deps:
+  - name: "git"
+  - name: "fzf"
+  - name: "neovim"
+  - name:  "curl"
+
