@@ -23,9 +23,9 @@ If you are on a fresh Arch Linux install and want to replicate this exact setup:
    cd Dotmgr
    go build -o dotmgr .
    sudo install -m 755 dotmgr /usr/local/bin/dotmgr
-
-    Clone this config repo:
-    bash
+```
+# Clone this config repo:
+```bash
 
     git clone https://github.com/Taha95-dev/Dotmgr-Config.git ~/.config/dotmgr
     cd ~/.config/dotmgr
@@ -45,10 +45,10 @@ If you are on a fresh Arch Linux install and want to replicate this exact setup:
 🎨 Theme Switcher
 
 Switch the entire visual aesthetic of the desktop (Wallpaper, dwl borders, Waybar, Wofi, Alacritty) with FZF:
-bash
-
+```bash
 dotmgr theme
-
+# this is will pop up a small fzf window in the terminal (requires FZF to be installed)
+```
 ⌨️ Key Components
 
     WM: dwl (Wayland)
