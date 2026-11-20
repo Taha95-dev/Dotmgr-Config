@@ -4,8 +4,7 @@ My personal Arch Linux environment, managed entirely by [dotmgr](https://github.
 
 This repo contains my Neovim configuration, custom `dwl` themes, Waybar styling, Zsh setup, and system bootstrapping scripts.
 
-![Preview](assets/preview.png)
-*(Add a screenshot of your desktop here!)*
+![](preview.png)
 
 ## 🚀 What's Inside
 
