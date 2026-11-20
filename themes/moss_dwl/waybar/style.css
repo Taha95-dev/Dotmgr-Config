@@ -1,0 +1,101 @@
+/* Moss/Foggy Forest theme for Waybar */
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "JetBrains Nerd Mono", "Font Awesome 6 Free";
+    font-size: 13px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: rgba(21, 26, 28, 0.85); /* Deep forest charcoal with transparency */
+    color: #D3C6AA; /* Misty gray text */
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+
+/* --- TASKBAR (Right) --- */
+#taskbar button {
+    padding: 0 8px;
+    color: #83C092; /* Muted moss green */
+    transition: all 0.2s ease;
+}
+
+#taskbar button:hover {
+    color: #D3C6AA;
+    background: rgba(167, 192, 128, 0.2); /* Soft green hover */
+    border-radius: 4px;
+}
+
+#taskbar button.active {
+    color: #151A1C;
+    background: #A7C080; /* Bright moss green for active */
+    border-radius: 4px;
+}
+
+/* --- GENERAL MODULE STYLING (Left & Right) --- */
+#clock,
+#battery,
+#cpu,
+#memory,
+#disk,
+#network,
+#pulseaudio,
+#tray,
+#mode {
+    padding: 0 12px;
+    margin: 4px 2px;
+    border-radius: 4px;
+    background-color: transparent;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* --- HOVER EFFECTS --- */
+#cpu:hover,
+#memory:hover,
+#disk:hover,
+#clock:hover {
+    background-color: rgba(167, 192, 128, 0.15); /* Faint green glow */
+    color: #ffffff;
+}
+
+/* --- LEFT SIDE (Network, Volume, Battery) --- */
+#network,
+#pulseaudio,
+#battery {
+    color: #DBBC7F; /* Dirt road yellow/brown */
+}
+
+#network:hover,
+#pulseaudio:hover,
+#battery:hover {
+    color: #ffffff;
+    background-color: rgba(167, 192, 128, 0.2);
+}
+
+/* --- CLOCK (Center focal point) --- */
+#clock {
+    font-weight: bold;
+    color: #D3C6AA;
+    letter-spacing: 1px;
+}
+
+/* --- WARNINGS & STATES --- */
+#battery.warning {
+    color: #DBBC7F; /* Yellow warning */
+}
+
+#battery.critical {
+    color: #E67E80; /* Muted autumn red */
+}
+
+#network.disconnected {
+    color: #E67E80;
+}
+
+@keyframes blink {
+    to {
+        background-color: #E67E80;
+        color: #151A1C;
+    }
+}

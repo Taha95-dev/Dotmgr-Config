@@ -1,0 +1,27 @@
+[user]
+    name = Taha
+    email = kashiftaha976@gmail.com
+
+[core]
+    editor = nvim
+    excludesfile = ~/.gitignore
+
+[init]
+	defaultBranch = main
+
+[color]
+    ui = auto
+
+[alias]
+    s = status
+    a = add .
+    c = commit -m
+    p = push
+    l = log --oneline --graph
+    d = diff
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential

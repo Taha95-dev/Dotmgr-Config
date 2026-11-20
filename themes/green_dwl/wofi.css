@@ -1,0 +1,35 @@
+/* Green theme for wofi */
+#window {
+    background-color: rgba(22, 22, 22, 0.75); /* 22,22,22 is the decimal for #161616, 0.75 is roughly BF */
+    border-radius: 8px;
+    border: 2px solid #4A7A2A;
+}
+
+#input {
+    background-color: #1A2A15;
+    color: #D5E6DD;
+    border: 1px solid #4A7A2A;
+    border-radius: 4px;
+    padding: 8px;
+}
+
+#entry {
+    color: #D5E6DD;
+}
+
+#entry:selected {
+    background-color: #4A7A2A;
+    color: #FFFFFF;
+}
+
+#entry image {
+    margin-right: 8px;
+}
+
+#text {
+    color: #D5E6DD;
+}
+
+#text:selected {
+    color: #FFFFFF;
+}

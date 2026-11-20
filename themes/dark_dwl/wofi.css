@@ -1,0 +1,57 @@
+/* Charcoal/Ash theme for wofi */
+#window {
+    background-color: rgba(22, 22, 22, 0.75); /* 22,22,22 is the decimal for #161616, 0.75 is roughly BF */
+    border-radius: 12px;
+    border: 2px solid #505257;
+}
+
+#input {
+    background-color: #2D2E30;
+    color: #E6DDD5;
+    border: 1px solid #505257;
+    border-radius: 6px;
+    padding: 8px 12px;
+    margin: 8px;
+}
+
+#input:focus {
+    border-color: #9AA0A6;
+}
+
+#entry {
+    color: #E6DDD5;
+    padding: 6px 12px;
+}
+
+#entry:selected {
+    background-color: #505257;
+    color: #FFFFFF;
+    border-radius: 4px;
+}
+
+#entry image {
+    margin-right: 8px;
+}
+
+#text {
+    color: #E6DDD5;
+}
+
+#text:selected {
+    color: #FFFFFF;
+}
+
+#scrollbar {
+    background-color: #161616;
+    border-radius: 4px;
+}
+
+#scrollbar slider {
+    background-color: #2D2E30;
+    border-radius: 4px;
+}
+
+#scrollbar slider:selected {
+    background-color: #505257;
+}
+

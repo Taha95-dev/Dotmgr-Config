@@ -1,0 +1,57 @@
+
+[window]
+padding = { x = 12, y = 12 }
+opacity = 0.85
+decorations = "None"
+
+[font]
+size = 9
+
+[font.normal]
+family = "JetBrains Nerd Mono"
+style = "Regular"
+
+[font.bold]
+family = "JetBrains Nerd Mono"
+style = "Bold"
+
+[font.italic]
+family = "JetBrains Nerd Mono"
+style = "Italic"
+
+[colors]
+primary = { background = "#161616", foreground = "#E6DDD5" }
+
+[colors.normal]
+black   = "#161616"  # Root color
+red     = "#505257"  # Focus color
+green   = "#7A8C74"  # Muted sage
+yellow  = "#A38D73"  # Muted sand
+blue    = "#71828C"  # Muted slate
+magenta = "#8C7B89"  # Muted plum
+cyan    = "#718C88"  # Muted teal
+white   = "#9AA0A6"  # Urgent color (light grey)
+
+[colors.bright]
+black   = "#2D2E30"  # Border color
+red     = "#9AA0A6"  # Urgent color
+green   = "#92A68C"  # Bright sage
+yellow  = "#BFA687"  # Bright sand
+blue    = "#8BA0AC"  # Bright slate
+magenta = "#A895A5"  # Bright plum
+cyan    = "#8BA8A4"  # Bright teal
+white   = "#E6DDD5"  # Clean white
+
+[cursor]
+style = { shape = "Underline", blinking = "On" }
+blink_interval = 500
+
+[selection]
+semantic_escape_chars = ",│`|:\"' ()[]{}<>\t"
+
+[terminal.shell]
+program = "/bin/zsh"
+args = ["-c", "exec zsh; source ~/.zshrc"]
+
+[env]
+TERM = "xterm-256color"

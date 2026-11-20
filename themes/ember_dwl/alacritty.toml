@@ -1,1 +1,57 @@
-# Ember Theme Config
+[window]
+padding = { x = 12, y = 12 }
+opacity = 0.85
+decorations = "None"
+
+[font]
+size = 9
+
+[font.normal]
+family = "JetBrains Nerd Mono"
+style = "Regular"
+
+[font.bold]
+family = "JetBrains Nerd Mono"
+style = "Bold"
+
+[font.italic]
+family = "JetBrains Nerd Mono"
+style = "Italic"
+
+[colors]
+primary = { background = "#120D0B", foreground = "#E6DDD5" }
+
+[colors.normal]
+black   = "#120D0B"
+red     = "#B83A18"
+green   = "#8FAF72"
+yellow  = "#C9955A"
+blue    = "#7D9AAA"
+magenta = "#A77B9E"
+cyan    = "#7FA6A1"
+white   = "#C8BDB5"
+
+[colors.bright]
+black   = "#3A211A"
+red     = "#E04422"
+green   = "#A8C58A"
+yellow  = "#E0AD6B"
+blue    = "#9BB8C7"
+magenta = "#C095B8"
+cyan    = "#9BC4BE"
+white   = "#E6DDD5"
+
+[cursor]
+style = { shape = "Underline", blinking = "On" }
+blink_interval = 500
+
+[selection]
+semantic_escape_chars = ",│`|:\"' ()[]{}<>\t"
+
+[terminal.shell]
+program = "/bin/zsh"
+args = ["-c", "exec zsh; source ~/.zshrc"]
+
+[env]
+TERM = "xterm-256color"
+

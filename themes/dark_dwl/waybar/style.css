@@ -1,0 +1,105 @@
+/* Charcoal/Ash theme for Waybar */
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "JetBrains Nerd Mono", "Font Awesome 6 Free";
+    font-size: 13px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: rgba(22, 22, 22, 0.85); /* Root charcoal background */
+    color: #E6DDD5;
+    /* Smooth transition if you ever change themes */
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+
+/* --- TASKBAR (Right) --- */
+#taskbar button {
+    padding: 0 8px;
+    color: #A38D73;
+    transition: all 0.2s ease;
+}
+
+#taskbar button:hover {
+    color: #E6DDD5;
+    background: rgba(80, 82, 87, 0.4);
+    border-radius: 4px;
+}
+
+#taskbar button.active {
+    color: #E6DDD5;
+    background: #505257;
+    border-radius: 4px;
+}
+
+/* --- GENERAL MODULE STYLING (Left & Right) --- */
+#clock,
+#battery,
+#cpu,
+#memory,
+#disk,
+#network,
+#pulseaudio,
+#tray,
+#mode {
+    padding: 0 12px;
+    margin: 4px 2px; /* Gives them a slight "pill" shape */
+    border-radius: 4px;
+    background-color: transparent;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* --- HOVER EFFECTS (Pure CSS, 0% CPU) --- */
+#cpu:hover,
+#memory:hover,
+#disk:hover,
+#clock:hover {
+    background-color: rgba(80, 82, 87, 0.5);
+    color: #ffffff;
+}
+
+/* --- LEFT SIDE (Network, Volume, Battery) --- */
+#network,
+#pulseaudio,
+#battery {
+    color: #A38D73; /* Muted sand */
+}
+
+#network:hover,
+#pulseaudio:hover,
+#battery:hover {
+    color: #E6DDD5;
+    background-color: rgba(80, 82, 87, 0.5);
+}
+
+/* --- CLOCK (Center focal point) --- */
+#clock {
+    font-weight: bold;
+    color: #E6DDD5;
+    letter-spacing: 1px;
+}
+
+/* --- WARNINGS & STATES --- */
+#battery.warning {
+    color: #d79921; /* Warmer warning color */
+}
+
+#battery.critical {
+    color: #cc241d; /* Red for critical */
+    /* If you want it to blink, uncomment the line below.
+       It's CSS-driven and uses almost no CPU. */
+    /* animation: blink 1.5s linear infinite alternate; */
+}
+
+#network.disconnected {
+    color: #cc241d;
+}
+
+@keyframes blink {
+    to {
+        background-color: #cc241d;
+        color: #161616;
+    }
+}

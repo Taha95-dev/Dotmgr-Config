@@ -1,0 +1,56 @@
+/* Ember theme for wofi */
+#window {
+    background-color: rgba(22, 22, 22, 0.75); /* 22,22,22 is the decimal for #161616, 0.75 is roughly BF */
+    border-radius: 12px;
+    border: 2px solid #B83A18;
+}
+
+#input {
+    background-color: #3A211A;
+    color: #E6DDD5;
+    border: 1px solid #B83A18;
+    border-radius: 6px;
+    padding: 8px 12px;
+    margin: 8px;
+}
+
+#input:focus {
+    border-color: #E04422;
+}
+
+#entry {
+    color: #E6DDD5;
+    padding: 6px 12px;
+}
+
+#entry:selected {
+    background-color: #B83A18;
+    color: #FFFFFF;
+    border-radius: 4px;
+}
+
+#entry image {
+    margin-right: 8px;
+}
+
+#text {
+    color: #E6DDD5;
+}
+
+#text:selected {
+    color: #FFFFFF;
+}
+
+#scrollbar {
+    background-color: #120D0B;
+    border-radius: 4px;
+}
+
+#scrollbar slider {
+    background-color: #3A211A;
+    border-radius: 4px;
+}
+
+#scrollbar slider:selected {
+    background-color: #B83A18;
+}

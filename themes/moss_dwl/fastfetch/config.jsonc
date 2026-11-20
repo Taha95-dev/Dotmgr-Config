@@ -1,0 +1,66 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+    "source": "arch3",
+    "color": {
+      "1": "green" /* Changed from white to green */
+    }
+  },
+  "display": {
+    "color": {
+      "title": "green",
+      "keys": "cyan",
+      "values": "white"
+    }
+  },
+  "modules": [
+    {
+      "type": "title",
+      "color": "green"
+    },
+    {
+      "type": "os"
+    },
+    {
+      "type": "host"
+    },
+    {
+      "type": "kernel"
+    },
+    {
+      "type": "uptime"
+    },
+    {
+      "type": "packages"
+    },
+    {
+      "type": "shell"
+    },
+    {
+      "type": "wm"
+    },
+    {
+      "type": "terminal"
+    },
+    {
+      "type": "cpu"
+    },
+    {
+      "type": "gpu"
+    },
+    {
+      "type": "memory"
+    },
+    {
+      "type": "disk"
+    },
+    {
+      "type": "localip"
+    },
+    {
+      "type": "theme",
+      "key": "Theme",
+      "value": "Moss"
+    }
+  ]
+}

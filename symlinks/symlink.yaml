@@ -1,14 +1,44 @@
 base_dir: "~/.config/dotmgr/symlinks"
 
 links:
-#  - source: "zsh/.zshrc"
-#    target: "~/.zshrc"
-#    type: "file"
-
-  - source: "nvim/init.lua"
-    target: "~/.config/nvim/init.lua"
+  # --- Zsh ---
+  - source: "zsh/.zshrc"
+    target: "~/.zshrc"
     type: "file"
+    action: "symlink"
 
-  - source: "nvim/lua"
-    target: "~/.config/nvim/lua"
+  # --- Neovim (Using COPY for safety) ---
+  - source: "nvim"
+    target: "~/.config/nvim"
     type: "dir"
+    action: "copy"
+
+  # --- Alacritty ---
+  - source: "alacritty/alacritty.toml"
+    target: "~/.config/alacritty/alacritty.toml"
+    type: "file"
+    action: "copy"
+
+  # --- GTK Themes ---
+  - source: "gtk-3.0"
+    target: "~/.config/gtk-3.0"
+    type: "dir"
+    action: "copy"
+  - source: "gtk-4.0"
+    target: "~/.config/gtk-4.0"
+    type: "dir"
+    action: "copy"
+
+  # --- Misc ---
+  - source: ".editorconfig"
+    target: "~/.editorconfig"
+    type: "file"
+    action: "copy"
+  - source: ".tmux.conf"
+    target: "~/.tmux.conf"
+    type: "file"
+    action: "copy"
+  - source: ".gitconfig"
+    target: "~/.gitconfig"
+    type: "file"
+    action: "copy"

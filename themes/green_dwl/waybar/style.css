@@ -1,0 +1,60 @@
+/* Green theme for Waybar */
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "JetBrains Nerd Mono", "Font Awesome 6 Free";
+    font-size: 13px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: rgba(13, 18, 11, 0.85);
+    color: #D5E6DD;
+}
+
+#workspaces button {
+    padding: 0 10px;
+    color: #8FAF5A;
+}
+
+#workspaces button.focused {
+    color: #D5E6DD;
+    background: #4A7A2A;
+}
+
+#workspaces button.urgent {
+    color: #E04422;
+}
+
+#clock,
+#battery,
+#cpu,
+#memory,
+#disk,
+#network,
+#pulseaudio,
+#wireplumber,
+#tray,
+#mode {
+    padding: 0 10px;
+}
+
+#battery.warning {
+    color: #E04422;
+}
+
+#battery.critical {
+    color: #E04422;
+    animation: blink 1s infinite;
+}
+
+#network.disconnected {
+    color: #E04422;
+}
+
+@keyframes blink {
+    to {
+        background-color: #E04422;
+        color: #0D120B;
+    }
+}

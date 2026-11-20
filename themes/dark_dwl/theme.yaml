@@ -1,0 +1,44 @@
+name: "Dark"
+description: "Deep dark theme for dwl"
+wm: "dwl"
+
+files:
+  # Alacritty (Symlink for instant colors)
+  - source: "alacritty.toml"
+    target: "~/.config/alacritty/alacritty.toml"
+    action: "symlink"
+
+  # dwl colors (Copy so we can compile it)
+  - source: "dwl-colors.h"
+    target: "~/dwl/current-colors.h"
+    action: "copy"
+
+  # fastfetch
+  - source: "fastfetch/config.jsonc"
+    target: "~/.config/fastfetch/config.jsonc"
+    action: "symlink"
+
+  # waybar
+  - source: "waybar/config"
+    target: "~/.config/waybar/config"
+    action: "symlink"
+  - source: "waybar/style.css"
+    target: "~/.config/waybar/style.css"
+    action: "symlink"
+
+  # wofi
+  - source: "wofi.css"
+    target: "~/.config/wofi/style.css"
+    action: "symlink"
+
+commands:
+  # Recompile dwl
+  - "cd ~/dwl && make clean && make && sudo make install"
+
+  # Restart waybar (wrapped in a subshell so && works)
+  - "(pkill waybar || true) && (waybar >/dev/null 2>&1 &)"
+
+  # Set wallpaper
+  - "mkdir -p ~/.config/dwl/wallpapers"
+  - "ln -sf ~/.config/dotmgr/themes/dark_dwl/wallpaper.png ~/.config/dwl/wallpapers/current"
+  - "(pkill swaybg || true) && (swaybg -i ~/.config/dwl/wallpapers/current -m fill >/dev/null 2>&1 &)"
