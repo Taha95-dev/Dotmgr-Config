@@ -1,0 +1,59 @@
+/* Moss / Foggy Forest theme for wofi */
+#window {
+    /* #151A1C converted to rgb is 21, 26, 28 */
+    background-color: rgba(21, 26, 28, 0.85);
+    border-radius: 12px;
+    border: 2px solid #A7C080; /* Bright moss border */
+}
+
+#input {
+    background-color: #2E383C; /* Forest dark */
+    color: #D3C6AA; /* Misty gray */
+    border: 1px solid #505257;
+    border-radius: 6px;
+    padding: 8px 12px;
+    margin: 8px;
+}
+
+#input:focus {
+    border-color: #A7C080;
+}
+
+#entry {
+    color: #D3C6AA;
+    padding: 6px 12px;
+}
+
+#entry:selected {
+    background-color: #A7C080;
+    color: #151A1C; /* Dark text for contrast on bright background */
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+#entry image {
+    margin-right: 8px;
+}
+
+#text {
+    color: #D3C6AA;
+}
+
+#text:selected {
+    color: #151A1C;
+    font-weight: bold;
+}
+
+#scrollbar {
+    background-color: #151A1C;
+    border-radius: 4px;
+}
+
+#scrollbar slider {
+    background-color: #2E383C;
+    border-radius: 4px;
+}
+
+#scrollbar slider:selected {
+    background-color: #A7C080;
+}

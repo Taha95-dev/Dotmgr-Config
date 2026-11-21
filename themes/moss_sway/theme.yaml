@@ -1,0 +1,41 @@
+name: "Moss"
+description: "Misty forest and foggy roads"
+wm: "sway"
+
+files:
+  # Alacritty terminal colors
+  - source: "alacritty.toml"
+    target: "~/.config/alacritty/alacritty.toml"
+    action: "symlink"
+
+  # Waybar styling
+  - source: "waybar/style.css"
+    target: "~/.config/waybar/style.css"
+    action: "symlink"
+
+  # Wofi launcher styling
+  - source: "wofi.css"
+    target: "~/.config/wofi/style.css"
+    action: "symlink"
+
+  # Fastfetch config
+  - source: "fastfetch/config.jsonc"
+    target: "~/.config/fastfetch/config.jsonc"
+    action: "symlink"
+
+  - source: "sway-colors.conf"
+    target: "~/.config/sway/sway-colors.conf"
+    action: "copy"
+
+  # wallpaper make sure you sway/wallpapers
+  - source: "wallpaper.png"
+    target: "~/.config/sway/wallpapers/wallpaper.png"
+    action: "copy"
+
+
+commands:
+  - "swaymsg reload"
+
+  # Restart waybar
+  - "(pkill waybar || true) && (waybar >/dev/null 2>&1 &)"
+
