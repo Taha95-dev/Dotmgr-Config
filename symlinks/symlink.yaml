@@ -19,6 +19,18 @@ links:
     type: "file"
     action: "copy"
 
+  # --- Dwl ---
+#  - source: "wms/dwl/config.def.h"
+#    target: "~/dwl/config.h"
+#    type: "file"
+#    action: "copy"
+
+  # --- Sway (My current WM) ---
+  - source: "wms/sway/config"
+    target: "~/.config/sway/config"
+    type: "file"
+    action: "copy"
+
   # --- GTK Themes ---
   - source: "gtk-3.0"
     target: "~/.config/gtk-3.0"

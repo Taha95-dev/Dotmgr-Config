@@ -1,0 +1,116 @@
+/* Dark Charcoal theme for Waybar */
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "JetBrainsMono Nerd Font", "JetBrains Nerd Mono", "Font Awesome 6 Free";
+    font-size: 13px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: rgba(24, 24, 27, 0.90); /* Deep charcoal */
+    color: #E4E4E7; /* Soft off-white text */
+    border-bottom: 1px solid #27272A;
+}
+
+/* Sway Workspaces */
+#workspaces button {
+    padding: 0 10px;
+    color: #A1A1AA; /* Muted slate gray */
+    background: transparent;
+}
+
+#workspaces button:hover {
+    background: #27272A;
+    color: #E4E4E7;
+}
+
+#workspaces button.focused {
+    color: #FFFFFF;
+    background: #3F3F46; /* Elevated charcoal highlight */
+    border-bottom: 2px solid #71717A;
+}
+
+#workspaces button.urgent {
+    color: #18181B;
+    background: #EF4444;
+}
+
+/* Sway Mode (Screenshot / Resize indicator) */
+#mode {
+    padding: 0 12px;
+    margin: 3px 6px;
+    background: #3F3F46;
+    color: #F4F4F5;
+    border: 1px solid #52525B;
+    border-radius: 3px;
+}
+
+/* Sway Scratchpad */
+#scratchpad {
+    padding: 0 10px;
+    color: #D4D4D8;
+}
+
+#scratchpad.empty {
+    background: transparent;
+}
+
+/* WLR Taskbar */
+#taskbar button {
+    padding: 0 8px;
+    background: transparent;
+}
+
+#taskbar button.active {
+    background: #27272A;
+    border-bottom: 2px solid #52525B;
+}
+
+#taskbar button:hover {
+    background: #3F3F46;
+}
+
+/* Right & Center Modules */
+#clock,
+#battery,
+#cpu,
+#memory,
+#disk,
+#network,
+#pulseaudio,
+#wireplumber,
+#tray {
+    padding: 0 10px;
+    color: #D4D4D8;
+}
+
+#clock {
+    color: #F4F4F5;
+    font-weight: bold;
+}
+
+#pulseaudio.muted {
+    color: #71717A;
+}
+
+#battery.warning {
+    color: #F59E0B;
+}
+
+#battery.critical {
+    color: #EF4444;
+    animation: blink 1s infinite;
+}
+
+#network.disconnected {
+    color: #EF4444;
+}
+
+@keyframes blink {
+    to {
+        background-color: #EF4444;
+        color: #18181B;
+    }
+}
+

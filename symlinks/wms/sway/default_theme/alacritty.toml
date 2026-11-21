@@ -1,0 +1,56 @@
+[window]
+padding = { x = 12, y = 12 }
+opacity = 0.90
+decorations = "None"
+
+[font]
+size = 9
+
+[font.normal]
+family = "JetBrains Nerd Mono"
+style = "Regular"
+
+[font.bold]
+family = "JetBrains Nerd Mono"
+style = "Bold"
+
+[font.italic]
+family = "JetBrains Nerd Mono"
+style = "Italic"
+
+[colors]
+primary = { background = "#18181B", foreground = "#E4E4E7" }
+
+[colors.normal]
+black   = "#18181B"
+red     = "#EF4444"
+green   = "#22C55E"
+yellow  = "#EAB308"
+blue    = "#3B82F6"
+magenta = "#A855F7"
+cyan    = "#06B6D4"
+white   = "#D4D4D8"
+
+[colors.bright]
+black   = "#52525B"
+red     = "#F87171"
+green   = "#4ADE80"
+yellow  = "#FACC15"
+blue    = "#60A5FA"
+magenta = "#C084FC"
+cyan    = "#22D3EE"
+white   = "#F4F4F5"
+
+[cursor]
+style = { shape = "Underline", blinking = "On" }
+blink_interval = 500
+
+[selection]
+semantic_escape_chars = ",│`|:\"' ()[]{}<>\t"
+
+[terminal.shell]
+program = "/bin/zsh"
+
+[env]
+TERM = "xterm-256color"
+
